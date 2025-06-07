@@ -1,0 +1,115 @@
+*
+{
+    background-color: black;
+    color: white;
+    font-family: poppins;
+    font-weight: 500;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 50px;
+    
+    gap: 60px;
+    font-size: x-large;
+    margin-left: 200px;
+    width: 500px;
+    
+}
+img
+{
+    height: 600px;
+    width:600px;
+    margin-top: 30px;
+}
+.cont{
+    display: flex;
+}
+.eachel
+{
+    display: flex;
+    gap: 100px;
+}
+textarea{
+    height: 200px;   /* Make it taller */
+    width: 300px;    /* Make it wider */
+    border-radius: 20px;
+    padding: 10px;
+}
+input
+{
+    border-radius: 10px;
+    background-color: rgb(186, 186, 186);
+    color: black;
+    padding: 5px;
+    border: none;
+}
+.des{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+button{
+   font-size: large;
+   padding: 15px;
+   border-radius: 10px;
+   background-color: #3BF874;
+   color: black;
+   border:none;
+   width:170px;
+   margin-left: 70px;
+    
+}
+#email
+{
+    margin-left: 5px;
+}
+.opt
+{
+    font-size: small;
+    font-weight: 900;
+}
+.des input
+{
+    height: 200px;
+    width: 300px;
+}
+@media (max-width: 1200px) {
+    .cont {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .img-container {
+        display: none; 
+    }
+
+    form {
+        margin: 0;
+        width: 80%;
+        padding: 0 20px;
+        font-size: large;
+    }
+
+    .eachel {
+        flex-direction: column;
+        gap: 80px;
+        width: 50%;
+    }
+
+    .des textarea,
+    .des input {
+        width: 80%;
+        height: 150px;
+    }
+
+    button {
+        margin-left: 0;
+        width: 80%;
+    }
+}
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="blur-bg"></div>
+
+    <div class="container">
+      <div class="header">
+        <div class="logo">flyte</div>
+
+        <div class="navigation">
+          <div>How It Works</div>
+          <div>Our WORK</div>
+          <div>Pricing</div>
+          <div>About Us</div>
+        </div>
+
+        <div class="waitlist">
+          <a href="sform.html">Join Waitlist</a>
+        </div>
+
+        <div class="hamburger" id="hamburger">☰</div>
+      </div>
+
+      <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-links">
+          <div>How It Works</div>
+          <div>Our WORK</div>
+          <div>Pricing</div>
+          <div>About Us</div>
+          <div class="waitlist"><a href="sform.html">Join Waitlist</a></div>
+        </div>
+      </div>
+
+      <div class="description">
+        <div class="d1">
+          Build a Wildly successful<br />
+          <span class="green">auto</span>mation business
+        </div>
+        <div class="d2">
+          <div>No prior business or coding experience required.</div>
+          <a href="sform.html" class="ch">Start Here</a>
+        </div>
+        <div class="waitlist"><a href="sform.html">Join Waitlist</a></div>
+      </div>
+
+      <div class="recholder">
+        <img src="Rectangle 1.png" alt="" />
+      </div>
+
+      <div class="Featured">
+        <div class="featuretxt">
+          <div>Featured</div>
+          <div class="green">On</div>
+        </div>
+        <div class="recholder2">
+          <div class="feature-img-wrapper"><img src="f1.png" alt="" /></div>
+        </div>
+      </div>
+
+      <div class="collage">
+        <div class="txt">
+          <div>But wait what, do</div>
+          <div class="green">I</div>
+          <div>get?</div>
+        </div>
+        <div class="recholder"><img src="Frame.png" alt="" /></div>
+      </div>
+
+      <div class="qt">
+        "The <span class="green">auto</span>mation revolution is here,<br />
+        it's big, and it's not slowing down for any of us.<br />
+        So if you want to build a business around it,<br />
+        you need to act quickly."
+      </div>
+
+      <div class="finalcall">
+        <div class="finaltxt">
+          Join us to leverage AI for business and <br />
+          position your business from the <br />
+          "<span class="green">competition</span>".
+        </div>
+        <div class="waitlist3"><a href="sform.html">Join Waitlist</a></div>
+      </div>
+
+      <div class="finallogo">flyte</div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        const mobileNav = document.getElementById("mobileNav");
+        const waitlistHeader = document.querySelector(".header .waitlist");
+
+        hamburger.addEventListener("click", () => {
+          mobileNav.classList.toggle("active");
+          if (mobileNav.classList.contains("active")) {
+            waitlistHeader.style.display = "none";
+          } else {
+            waitlistHeader.style.display = "inline-flex";
+          }
+        });
+
+        document.querySelectorAll(".mobile-links div, .mobile-links a").forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileNav.classList.remove("active");
+            waitlistHeader.style.display = "inline-flex";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

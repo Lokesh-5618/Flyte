@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styleform.css" />
+  </head>
+  <body>
+    <div class="cont">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="bedf3453-1282-4757-ae0c-59d55804fbac" />
+
+        <div class="eachel">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+
+        <div class="eachel">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="des">
+          <label for="desc">
+            What makes you excited?
+            <br />
+            <div class="opt">(Optional)</div>
+          </label>
+          <textarea class="input" id="desc" name="excited" placeholder="Share what makes you excited..."></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="img-container">
+        <img src="Frame.png" alt="" />
+      </div>
+    </div>
+
+    <script src="scriptform.js"></script>
+  </body>
+</html>
